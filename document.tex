@@ -1,0 +1,131 @@
+\documentclass[
+	article,
+	11pt,
+	twoside,
+	a4paper,
+	english,
+	brazil,
+	sumario=tradicional
+	]{abntex2}
+
+\usepackage{helvet} 
+\usepackage[T1]{fontenc}		
+\usepackage[utf8]{inputenc}	
+\usepackage{indentfirst}
+\usepackage{nomencl}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{float}
+\usepackage{pdfpages}
+\usepackage{scalefnt}
+\usepackage{authblk}
+\usepackage{multicol}
+
+\linespread{1.5}
+
+\renewcommand\Authands{ e }
+\renewcommand{\familydefault}{\sfdefault}
+
+\setlrmarginsandblock{4cm}{4cm}{*}
+\setulmarginsandblock{4cm}{4cm}{*}
+\checkandfixthelayout
+
+\usepackage[brazilian,hyperpageref]{backref}	 % 
+\usepackage[alf]{abntex2cite}
+
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}
+
+\titulo{Fundamentos de contagem}
+\author[*]{Ítalo Epifânio de Lima e Silva}
+\author[*]{Andressa desculpa mas não sei seu nome completo} 
+\affil[*]{Universidade Federal do Rio Grande do Norte, UFRN}
+
+\local{Natal, RN}
+\data{2018}
+
+\definecolor{blue}{RGB}{41,5,195}
+
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={Modelo de artigo científico com abnTeX2},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+		colorlinks=true,       		% false: boxed links; true: colored links
+    	linkcolor=blue,          	% color of internal links
+    	citecolor=blue,        		% color of links to bibliography
+    	filecolor=magenta,      		% color of file links
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+\makeatother
+
+\makeindex
+
+\setlrmarginsandblock{3cm}{3cm}{*}
+\setulmarginsandblock{3cm}{3cm}{*}
+\checkandfixthelayout
+
+\setlength{\parindent}{1.3cm}
+
+\setlength{\parskip}{0.2cm}  
+
+\SingleSpacing
+
+\begin{document}
+
+\frenchspacing 
+
+\maketitle
+
+\textual
+
+\section*{Introdução}
+\addcontentsline{toc}{section}{Introdução}
+\input{esqueleto/introducao.tex}
+
+\section*{Princípio fundamental da contagem}
+\addcontentsline{toc}{section}{Princípio fundamental da contagem}
+\input{esqueleto/principioFundamentalContagem.tex}
+
+\section*{Permutações simples}
+\addcontentsline{toc}{section}{Permutações simples}
+\input{esqueleto/permutacaoSimples.tex}
+
+\section*{Arranjos}
+\addcontentsline{toc}{section}{Arranjos}
+\input{esqueleto/arranjos.tex}
+
+\section*{Combinações}
+\addcontentsline{toc}{section}{Combinações}
+\input{esqueleto/combinacoes.tex}
+
+\section*{Permutação com elementos repetidos}
+\addcontentsline{toc}{section}{Permutação com elementos repetidos}
+\input{esqueleto/permutacaoElementoRepetido.tex}
+
+
+\begin{comment}
+%Esse postextual só é usado em caso de referências
+
+\postextual
+
+\onecolumn{
+	\bibliography{bibliography}
+}
+\end{comment}
+
+\end{document}
