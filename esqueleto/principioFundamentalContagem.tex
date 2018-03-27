@@ -1,0 +1,29 @@
+Na análise combinatória, o princípio fundamental da contagem (PFC) é um dos procedimentos utilizado para contar o número de possibilidades que uma tarefa pode ser realizada sem que seja necessário realizar essa contagem manualmente.
+Neste princípio, considerando uma tarefa dividida em duas etapas, se tivermos \textbf{\textit{n}} escolhas para a primeira etapa e \textbf{\textit{m}} escolhas para a segunda etapa, então tarefa completa pode ser executada de \textbf{\textit{n.m}} maneiras, considerando que as escolhas são independentes (Dantas, 2013).
+
+Por exemplo, considerando um homem que decide ir para Europa de avião e voltar de barco. Se há cinco linhas aéreas diferentes disponíveis para ele e sete companhias de barco, então ele poderia fazer essa viagem de 5.7 ou 35 formas diferentes.
+Esse princípio pode ser extendido para escolhas além de duas etapas, para três etapas, quatro ou mais.
+
+Formulando essa definição em termos de eventos temos que se um evento pode ocorrer de \textbf{\textit{n}} maneiras, e um segundo evento pode ocorrer independentemente do primeiro de \textbf{\textit{m}} maneiras, então os dois eventos podem ocorrer em \textbf{\textit{n.m}} maneiras (Niven, 1965).
+
+\noindent
+Exemplo 1: Quantos inteiros entre 100 e 999 possuem dígitos diferentes?
+
+Nesse caso, não podemos apenas considerar o número de permutações dos 10 dígitos existentes (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) tomados três a três, pois 052, por exemplo, não é um número entre 100 e 999. Assim, não podemos utilizar o dígito 0 para ocupar o primeiro espaço, restando nove opções para o dígito das centenas. Para o segundo espaço também temos nove opções, pois agora podemos utilizar o 0 ou qualquer um dos outros dígitos que não tenha sido utilizado ainda. De forma similar, para o último espaço teremos 8 opções.
+Então, utilizando o princípio fundamental da contagem temos 
+
+\begin{center}
+	$9.9.8 = 648 \ \ inteiros \ \ entre \ \ 100 \ \ e \ \ \ \ 999 \ \ com \ \ {d\acute{\imath}gitos} \ \ diferentes$ 
+\end{center}
+
+\noindent
+Exemplo 2: Dos 648 inteiros do problema anterior, quantos são ímpares?
+
+Para o número ser ímpar ele precisa terminar em 1, 3, 5, 7 ou 9, assim, para o dígito das unidades, teremos 5 opções.
+Para o dígito das centenas não podemos começar com 0, já que estes inteiros estão entre 100 e 999, logo, restam os outros oito dígitos não nulos.
+Por fim, para o dígito das dezenas temos ainda 8 opções, pois agora pode ser utilizado o 0 ou um dos  outros sete dígitos não nulos. Assim, pelo PFC temos
+\begin{center}
+	$8.8.5 = 320 \ \ inteiros \ \ {\acute{\imath}mpares}\ \ entre \ \ 100 \ \ e \ \ \ \ 999 \ \ com \ \ {d\acute{\imath}gitos} \ \ diferentes$ 
+\end{center}
+
+
