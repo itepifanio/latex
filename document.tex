@@ -15,12 +15,15 @@
 \usepackage{nomencl}
 \usepackage{color}
 \usepackage{graphicx}
+\usepackage[export]{adjustbox}
 \usepackage{microtype}
 \usepackage{float}
 \usepackage{pdfpages}
 \usepackage{scalefnt}
 \usepackage{authblk}
 \usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{wrapfig}
 
 \linespread{1.5}
 
@@ -105,6 +108,10 @@
 \addcontentsline{toc}{section}{Permutações simples}
 \input{esqueleto/permutacaoSimples.tex}
 
+\section*{Permutação com elementos repetidos}
+\addcontentsline{toc}{section}{Permutação com elementos repetidos}
+\input{esqueleto/permutacaoElementoRepetido.tex}
+
 \section*{Arranjos}
 \addcontentsline{toc}{section}{Arranjos}
 \input{esqueleto/arranjos.tex}
@@ -112,11 +119,6 @@
 \section*{Combinações}
 \addcontentsline{toc}{section}{Combinações}
 \input{esqueleto/combinacoes.tex}
-
-\section*{Permutação com elementos repetidos}
-\addcontentsline{toc}{section}{Permutação com elementos repetidos}
-\input{esqueleto/permutacaoElementoRepetido.tex}
-
 
 \begin{comment}
 %Esse postextual só é usado em caso de referências
