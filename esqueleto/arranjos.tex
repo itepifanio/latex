@@ -15,11 +15,9 @@ Supondo primeiramente que o número de objetos é igual ao número de espaços (
 Logo, pelo princípio fundamental da contagem descrito anteriormente temos
 \begin{center}
 	$A(n,n)=n\ \ .\ \ (n-1)\ \ .\ \ (n-2)\ \ .\ \ (n-3)\ \ ...\ \ 1$
-\end{center}
+	
+ou
 
-\noindent 
-que é a definição de fatorial, ou seja, o produto de todos os inteiros de \textbf{\textit{n}} até 1 (Niven, 1965). Assim,
-\begin{center}
 	$A(n,n)=n!$
 \end{center}
 
@@ -76,12 +74,12 @@ Para a primeira letra da placa teremos 26 opções, para a segunda também terem
 Se não utilizarmos letras repetidas, ficamos com 26.25.24.23 ou  $\frac{26!}{22!}$ possibilidades de escolha\\
 
 \noindent
-Exemplo 2: Quantos inteiros entre 100 e 999 inclusivo consiste de dígitos ímpares distintos?
+Exemplo 2: Quantos inteiros entre 100 e 999 consistem de dígitos ímpares distintos?
 
 Os dígitos ímpares são 1, 3, 5, 7 e 9, logo n=5. Além disso, os número serão formados por 3 dígitos, logo r=3. Assim podemos dizer que vamos realizar uma permutação de 5 objetos tomados 3 a 3, ou seja, A(5,3).
 
 \begin{center}
-	$A(5,3) = \frac{5!}{(5-3)!}= \frac{5!}{2!}=\frac{5.4.3.2!}{2!}=5.4.3=60$
+	$A(5,3) = \frac{5!}{(5-3)!}= \frac{5!}{2!}=\frac{5.4.3.2!}{2!}=5.4.3=60 \ \ inteiros$
 \end{center}
 
 
