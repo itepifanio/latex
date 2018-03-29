@@ -1,0 +1,20 @@
+Como estabelecido anteriormente, o simbolo da permutação é dado por $P(n,k)$, que consiste em arranjamentos ordenados de objetos distintos. Permutações com elementos repetidos consistem em agrupar, ou arranjar, um certo número de elementos de forma que ao menos um desses elementos ocorram mais de uma vez.
+
+Para não contar um elemento mais de uma vez durante uma permutação, basta remover quantas vezes aquele elemento permutou, ou seja, se temos uma permutação $P(n,k)$ e um elemento $a$ se repete $b$ vezes, então basta remover as $b!$ permutações do elemento $a$, assim teríamos, $\dfrac{P(n,k)}{b!}$
+
+
+\subsection*{Questão 1}
+Possuo 4 bolas amarelas, 3 bolas vermelhas, 2 bolas azuis e 1 bola verde. Pretendo colocá-las em um tubo acrílico translúcido e incolor, onde elas ficarão umas sobre as outras na vertical. De quantas maneiras distintas eu poderei formar esta coluna de bolas?
+
+\subsection*{Resolução da questão 1}
+
+Existem 10 bolas de quatro cores diferentes. Dentre essas $10!$ formar de organizar as bolas precisamos remover as repetições das 4 bolas amarelas, 3 vermelhas e 2 azuis, para isso dividimos o total de permutações pelas suas repetições, dessa forma teremos: $\dfrac{10!}{4! 3! 2!}$, o que totaliza em 12600 maneiras diferentes de organizar o tubo.
+
+\subsubsection*{Questão 2}
+
+Determinar os anagramas da palavra ARARA. 
+
+\subsubsection*{Resolução da questão 2}
+
+A palavra ARARA contém 5 letras, porém, o A se repete 3 vezes e o R 2 vezes. Como não podemos contar a repetição das letras teremos então as $5!$ formas de organizar as letras e removendo as repetições $\dfrac{5!}{2! 3!}$, totalizando em 10 anagramas.
+
