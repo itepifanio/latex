@@ -1,0 +1,47 @@
+Permutações simples são arranjamentos ordenados de objetos distintos, onde \textbf{\textit{n}} objetos são tomados \textbf{\textit{r}} a \textbf{\textit{r}}, com \textbf{\textit{r}} \textit{igual} \textbf{\textit{n}} (\textbf{\textit{r}} = \textbf{\textit{n}}). Assim, podemos dizer que uma permutação simples é dada por P(n,n), onde
+\begin{center}
+	$P(n,n)=n\ \ .\ \ (n-1)\ \ .\ \ (n-2)\ \ .\ \ (n-3)\ \ ...\ \ 1$
+\end{center}
+
+\noindent 
+que é a definição de fatorial, ou seja, o produto de todos os inteiros de \textbf{\textit{n}} até 1 (Niven, 1965). Assim,
+\begin{center}
+	$P(n,n)=n!$
+\end{center}
+
+\noindent
+Exemplo 1: De quantas formas diferentes o nome Djackson pode ser escrito?
+
+Podemos dizer que essa é uma permutação de oito letras tomadas 8 a 8, ou seja, para o primeiro espaço temos oito letras, para o segundo sete, para o terceiro 6 e assim por diante. Logo, temos
+
+\begin{center}
+	$P(8,8)=8!$
+	
+	$P(8,8)=8\ \ .\ \ (8-1)\ \ .\ \ (8-2)\ \ .\ \ (8-3)\ \ ...\ \ 1$
+	
+	$P(8,8)=8\ \ .\ \ 7\ \ .\ \ 6\ \ .\ \ 5\ \ .\ \ 4 \ \ . \ \ 3 \ \ . \ \ 2 \ \ . \ \ 1$
+	
+	$P(8,8)=40320 \ \ possibilidades $
+\end{center}
+
+\noindent
+Exemplo 2: Considere todos os anagramas formados por 6 letras distintas obtidas permutando-se, de todas as formas possíveis, as letras G, I, T, H, U, B. Quantos palavras é possível formar (no total) e quantas palavras se iniciam com o a letra G?
+
+Para calcular a quantidade total de anagramas podemos realizar uma permutação P(6,6)
+
+\begin{center}
+	$P(6,6)=6!$
+	
+	$P(6,6)=6\ \ .\ \ 5 \ \ .\ \ 4 \ \ .\ \ 3 \ \ .\ \ 2 \ \ . \ \ 1$
+	
+	$P(6,6)=720 \ \ palavras $
+\end{center}
+
+Para saber quantas iniciam com a letra G, podemos fixar a letra G na primeira das seis posições disponíveis e realizar uma permutação com as cinco letras restantes.Dessa forma, obtemos
+\begin{center}
+	$P(5,5)=5!$
+	
+	$P(5,5)=5 \ \ .\ \ 4\ \ .\ \ 3\ \ .\ \ 2 \ \ . \ \ 1$
+	
+	$P(6,6)=120 \ \ palavras \ \ come{\fontfamily{math}\selectfont \textit{\c{ç}}}am \ \ com \ \ G$
+\end{center}
