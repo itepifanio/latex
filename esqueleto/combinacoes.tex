@@ -4,7 +4,7 @@ Representado pelo símbolo matemático $\mathrm{C}_r^n$, que significa ``o núme
 
 Sabemos que uma coleção de n objetos pode ser ordenada de $n!$ jeitos. Caso quiséssemos organizar esses $n$ objetos no intervalo de $r$ a $n$ teríamos um arranjo com repetição dado pela fórmula $ \dfrac{n!}{(n - r)!}$ estudada anteriormente. Então se quiséssemos calcular as maneiras de selecionar esses objetos de forma que a ordem deles não importasse, ou seja, uma ordem $\{a, b, c\}$ sendo o mesmo que $\{c , a, b\}$, teríamos então que remover a quantidade de permutações entre esses objetos, dividindo pelo número de formas que eles se arranjam entre si, dessa forma teríamos $\dfrac{\dfrac{n!}{n-r}}{r!}$o que nos induz a fórmula $\dfrac{n!}{r!(n-r)}$.
 
-\subsection*{Questão 1}
+\subsection*{Exemplo 1}
 
 \begin{wrapfigure}{l}{0.4\textwidth}
 	\includegraphics[width=5cm, left]{imagens/pokemon.png}
@@ -12,11 +12,11 @@ Sabemos que uma coleção de n objetos pode ser ordenada de $n!$ jeitos. Caso qu
 
 Um treinador pokémon possui a sua disposição 15 pokémons, mas ele só pode carregar 6 pokémons de cada vez, então ele decidiu contar de quantas maneiras diferentes ele poderia escolher um time com 6 dessas criaturinhas.
 
-\subsubsection*{Resolução da questão 1}
+\subsubsection*{Resolução do exemplo 1}
 
 Note que o treinador não se atentou aos tipos de pokémons que dispunha, dessa forma ele só quer calcular o número de combinações que formam um time de 6, o que pode ser facilmente calculado pela fórmula mostrada anteriormente: $\dfrac{15!}{6!(15-6)}$, o que resulta em um total de 5005 maneiras de formar times pokémons.
 
-\subsection*{Questão 2}
+\subsection*{Exemplo 2}
 
 \begin{wrapfigure}{l}{0.4\textwidth}
 	\includegraphics[width=5cm, left]{imagens/mst.png}
@@ -25,7 +25,7 @@ Note que o treinador não se atentou aos tipos de pokémons que dispunha, dessa 
 (UFSM) A reforma agrária ainda é um ponto crucial para se estabelecer uma melhor distribuição de renda no Brasil. Uma comunidade de sem-terra, após se alojar numa fazenda comprovadamente improdutiva, recebe informação de que o INCRA irá receber uma comissão para negociações. Em assembleia democrática, os sem-terra decidem que tal comissão será composta por um presidente geral, um porta-voz que repassará as notícias à comunidade e aos representantes e um agente que cuidará da parte burocrática das negociações. Além desses com cargos específicos, participarão dessa comissão mais 6 conselheiros que auxiliarão indistintamente em todas as faces da negociação.
 Se, dentre toda a comunidade, apenas 15 pessoas forem consideradas aptas aos cargos, o número de comissões distintas que poderão ser formadas com essas 15 pessoas é obtido pelo produto
 
-\subsubsection*{Resolução da questão 2}
+\subsubsection*{Resolução do exemplo 2}
 
 Existem os 3 cargos principais para serem preenchidos pelos 15 sem-terra, assim como os 6 cargos restantes de conselheiros, sendo assim, iremos ter 15 pessoas concorrendo aos cargos principais e depois de preencher esses cargos, 12 pessoas estarão concorrendo a conselheiros.
 
@@ -34,13 +34,3 @@ Note que, para a posição dos cargos principais é importante, ou seja, as pess
 Para os cargos de conselheiros um grupo contendo as pessoas ``a, b, c, d'' e ``e'' são o mesmo grupo, não importa a ordem de disposição dos sem-terra, dessa forma teríamos uma combinação das 12 pessoas restantes para um grupo de 6, utilizando a fórmula teremos $\dfrac{12!}{6!(12-6)}$ que implica em $11 \cdot 7 \cdot 3 \cdot 2^{2}$.
 
 Contabilizando as possibilidades de conselheiros e cargos principais teremos  $15 \cdot 14 \cdot 13 \cdot 11 \cdot 7 \cdot 3 \cdot 2^{2}$ formas de organizar comissões distintas formadas pelos 15 sem-terra.
-
- \section*{Referências}
-\noindent
-DANTAS, Carlos Alberto Barbosa. Probabilidade: Um Curso Introdutório Vol. 10. Edusp, 2013.
-
-\noindent
-NIVEN, Ivan. Mathematics of choice: or, How to count without counting. MAA, 1965.
-
-\noindent
-VAZQUEZ, Cristiane MR; NOGUTI, Fabiane CH. Análise Combinatória: alguns aspectos históricos e uma abordagem pedagógica. Recife: VII Encontro Nacional de Educação Matemática, p. 22, 2004.

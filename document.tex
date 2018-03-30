@@ -34,20 +34,8 @@
 \setulmarginsandblock{4cm}{4cm}{*}
 \checkandfixthelayout
 
-\usepackage[brazilian,hyperpageref]{backref}	 % 
+%\usepackage[brazilian,hyperpageref]{backref}	 % 
 \usepackage[alf]{abntex2cite}
-
-\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
-
-\renewcommand{\backref}{}
-\renewcommand*{\backrefalt}[4]{
-	\ifcase #1 %
-		Nenhuma citação no texto.%
-	\or
-		Citado na página #2.%
-	\else
-		Citado #1 vezes nas páginas #2.%
-	\fi}
 
 \titulo{Fundamentos de contagem} 
 \author[*]{Ítalo Epifânio de Lima e Silva}
@@ -77,6 +65,7 @@
 \makeatother
 
 \makeindex
+
 
 \setlrmarginsandblock{3cm}{3cm}{*}
 \setulmarginsandblock{3cm}{3cm}{*}
@@ -120,16 +109,13 @@
 \addcontentsline{toc}{section}{Combinações}
 \input{esqueleto/combinacoes.tex}
 
-\begin{comment}
-
 %Esse postextual só é usado em caso de referências
 
 \postextual
 
 \onecolumn{
-	\bibliography{bibliography}
+	\bibliography{referencias/referencias.bib}
 }
 
-\end{comment}
 
 \end{document}
