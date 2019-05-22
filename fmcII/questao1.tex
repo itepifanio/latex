@@ -1,0 +1,49 @@
+\noindent
+\subsection*{01 - Sejam 
+$ f \colon \mathbb{R} \to \mathbb{R} $ 
+e 
+$ g \colon \mathbb{R} \to \mathbb{R} $ 
+duas funções injetivas. A função  definida por 
+$ h(x) = f (x) + g(x) $
+é injetiva? (Aqui $+$ denota a usual adição entre números reais)
+}
+
+A função $ h(x) $ não é injetiva. Mostremos um contra-exemplo:
+
+Seja $ g $ e $ f $ definidas por $ g(x) = -x $ e $ f(x) = x $. 
+
+Note que ambas são \hyperlink{injetivas}{injetivas}.
+
+Dessa forma $ h(x) = -x + x $ e, portanto, $ h(x) = 0 $
+
+Uma função constante e não injetiva, pois existem dois (nesse caso todos) elementos do domínio de $ h $ que apontam para mais de um elemento do contradomínio.
+
+\begin{comment}
+
+\begin{tikzpicture}
+%put some nodes on the left
+\foreach \x in {1,2,3}{
+	\node[fill,circle,inner sep=2pt] (d\x) at (0,\x) {};
+}
+\node[fit=(d1) (d2) (d3),ellipse,draw,minimum width=2cm, minimum height = 3cm] {}; 
+
+%put some nodes on the right
+\foreach \x[count=\xi] in {0.75}{
+	\node[fill,circle,inner sep=2pt] (c\xi) at (4,\x) {};
+}
+\node[fit=(c1) (c1) (c1) ,ellipse,draw,minimum width=1.5cm, minimum height = 3cm] {};
+\draw[-latex] (d1) -- (c1);
+\draw[-latex] (d2) -- (c1);
+\draw[-latex] (d3) -- (c1);
+\end{tikzpicture}
+
+\end{comment}
+
+\subsection*{Mostrando a injetividade de $ f $ e $ g $:}
+
+Demostrando que $ f $ e $ g $ são \hypertarget{injetivas}{injetivas}:
+
+Seja $ x, y \in \mathbb{R} $ tal que $ f(x) = f(y) $, logo $ x = y $, portanto $ f $ é injetiva.
+
+Seja $ w, z \in \mathbb{R} $ tal que $ g(w) = g(z) $, logo $ -z = -w $ e $ z = w $, portanto $ g $ é injetiva.
+
