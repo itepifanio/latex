@@ -1,0 +1,22 @@
+\noindent
+\subsection*{
+	Seja 
+	$ f \colon A \to B $ uma função total (H1) e $ R \subseteq A \times A $ uma relação transitiva (H2). Seja a relação $ S \subseteq B \times B $ definida da forma seguinte:	
+	$ S = \{ (x,y) \in B \times B | (\exists a,b \in A)[f(a)=x, f(b)=y, (a,b) \in R ] \} $.
+	Mostre que a relação $ S $ pode não ser transitiva.
+	Qual seria uma condição suficiente para S ser transitiva? (Demonstre)
+}
+
+
+Seja $ A = \{ 1, 2, 3, 4 \} $, $ B = \{ u, v, w \} $, $ f = { (1,u), (2,v), (3,v), (4,w)} $ e $ R = {(1,2), (3,4)} $
+
+Note que os $ R $ é transitiva.
+
+$ (u,v) \in S $, pois $ (1,2) \in R $
+
+Similarmente, $ (v,w) \in S $, pois $ (3,4) \in R $
+
+Entretanto, $ (u,w) \notin S $ pois $(1,4) \notin R $, logo $ S $ não é transitiva.
+
+Para ser transitiva no exemplo anterior $ f $ teria de ser injetiva. Provemos então para o caso de $ f $ injetiva: 
+

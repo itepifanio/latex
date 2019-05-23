@@ -1,38 +1,40 @@
-Sejam 
+\noindent
+\subsection*{
+02 - Sejam 
 $ f \colon A \to B $ e $ g \colon B \to A $ 
 funções totais \hypertarget{h1}{(H1)}, e tais que 
 $ f \circ g = Id_{B} $ 
 \hypertarget{h2}{(H2)}, mas 
 $ g \circ f \neq IdA $ \hypertarget{h3}{(H3)}.
+}
 
-(2a) Demonstre que a função f não pode ser injetiva.
 
-(2b) Demonstre que a função g não pode ser sobrejetiva.
 
-\begin{comment}
-Como $ f \colon A \to B $ e $ g \colon B \to A $ e $ f \circ g = Id_{B} $ segue-se pelo \hyperlink{q2:lema1}{lema 1} que $ f $ é sobrejetiva e $ g $ é injetivas.
-\end{comment}
+2a) Demonstre que a função f não pode ser injetiva.
+
+2b) Demonstre que a função g não pode ser sobrejetiva.
+
 
 \subsubsection*{2a)} 
 
 Suponha que $ f $ é injetora. 
 
-Seja $ a,b \in A $ tal que $ f(a) = f(b) $
+Por (H3) existem $ (a,a') \in A $, com $ a \neq a' $ e $ (a,a') \in g \circ f $
 
-Note que $ f(a), f(b) \in B $, logo $ (f \circ g)(f(a)) = Id_{A}(f(a)) $ e $ (f \circ g)(f(b)) = Id_{A}(f(b)) $
+Pela definição de composição, existe $ b \in B $ tal que $ (a,b) \in f $ e $ (b,a') \in g $
 
-Pela definição de identidade: $ (f \circ g)(f(a)) = f(a) $ e $ (f \circ g)(f(b)) = f(b) $
+Por (H2), $ (f \circ g)(b) = Id_{B}(b)$, pela definição de identidade e composição $ f(g(b)) = b $
 
-Logo, $ (f \circ g)(f(a)) = f(a) = f(b) = (f \circ g)(f(b)) $
+Note que $ g(b) =  a' $, logo $ f(a') = b $
+ 
+Note que, $ f(a) = b $, logo $ f(a) = f(a') $
 
-Pela definição de composição: $ f(g(f(a))) = f(a) = f(b) = f(g((f(b))) $
-
-Logo,  $ g(f(a)) = a = b = g(f(b)) $
-
-Note que, $ g(f(a)) = Id_{A}(a) = Id_{A}(b) = g(f(b)) $, pela definição de identidade
-
-Entretanto, isso contradiz \hyperlink{h3}{(H3)}, portanto $ f $ não pode ser injetiva.
+Como $ f $ é injetiva, então $ a = a' $, o que contradiz (H3), portanto $ f $ não é injetiva.
 
 \subsubsection*{2b)}
+
+Suponha que $ g $ é sobrejetiva.
+
+Pela definição de sobrejetividade, existem $ (b, b') \in B $ tal que $ g(b) = b'
 
  
