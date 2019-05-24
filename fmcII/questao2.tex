@@ -33,8 +33,21 @@ Como $ f $ é injetiva, então $ a = a' $, o que contradiz (H3), portanto $ f $ 
 
 \subsubsection*{2b)}
 
-Suponha que $ g $ é sobrejetiva.
+Por 2a) f não é injetiva e portanto, existem $ a, a' \in A $ tal que $ f(a) = f(a') $ e $ a \neq a' $
 
-Pela definição de sobrejetividade, existem $ (b, b') \in B $ tal que $ g(b) = b'
+Suponha que $ g $ é sobrejetiva
 
- 
+Pela definição de sobrejetividade, existem $ (b, b') \in B $ tal que $ g(b) = a $ e $ g(b') = a' $
+
+Note que $ b \neq b' $, por $ g $ ser função total
+
+Note que $ (f \circ g)(b) $, pela definição de composição $ f(g(b)) $ e como $ g(b) = a $, então $ f(g(b)) = f(a) $ (I)
+
+Note que $ (f \circ g)(b') $, pela definição de composição $ f(g(b')) $ e como $ g(b') = a' $, então $ f(g(b')) = f(a') $ (II)
+
+Por (H2) $ (f \circ g)(b) = Id_{B}(b) $, pela definição de identidade e composição $ f(g(b)) = b $ e por (I) $ f(g(b)) = b = f(a) $
+
+Por (H2) $ (f \circ g)(b') = Id_{B}(b') $, pela definição de identidade e composição $ f(g(b')) = b' $ e por (I) $ f(g(b')) = b' = f(a') $
+
+Como $ f(a) = b $ e $ f(a') = b' $, então $ b = b' $, o que contradiz $ g $ ser função total, portanto, $ g $ não é sobrejetiva.
+

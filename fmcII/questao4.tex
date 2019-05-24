@@ -1,0 +1,25 @@
+\subsection*{
+04 - Seja $ A = \mathbb{R} - \mathbb{Z} $. O conjunto A é contável?
+\\
+Pode assumir que $\mathbb{R}$ não é contável (H1) e que $ \mathbb{Z} $ é contável
+}
+
+Lema: se $ A $ e $ B $ então $ A \cup B $ é incontável:
+
+Se $ A $ e $ B $ são contáveis existe $ f \colon A \to \mathbb{N} $ e $ g \colon B \to \mathbb{N} $ injetivas, ou seja, se $ f(x) = f(y) $ então $ x = y $ e se $ g(x) = g(y) $ então $ x = y $. Definimos a função $ h \colon A \cup B \to \mathbb{Z} $ tal que:
+
+\[   
+h(x) = 
+\begin{cases}
+	f(x) \text{, se } x \in A \\
+	-g(x) \text{, se } x \notin A
+\end{cases}
+\]
+
+Tome que $ f(x) = f(y) $. Se $ h(x) = h(y) \geq 0 $ então $ h(x) = f(x) $ e $ h(y) = f(y) $ logo $ h(x) = h(y) $. Pela injetividade de $ f $, $ x = y $. Se $ g(x) = g(y) $ e $ h(x) = h(y) \leq 0 $ então $ h(x) = -g(x) = -g(y) = h(y) $. Pela injetividade de $ g $ $ x = y $. Logo $ h $ é injetivo com $ \mathbb{Z} $, ou seja $ A \cup B \sim \mathbb{Z} $. Entretanto, $ \mathbb{Z} $ é contável $ \mathbb{Z} \sim \mathbb{N} $, logo, pela transitividade de $ \sim $ $ A \cup B \sim \mathbb{Z} \sim \mathbb{N} $
+\\~\\~\\
+Demonstrando a questão:
+
+Suponha que $ A $ é contável, logo temos $ A $ e $ \mathbb{Z} $ contáveis e pelo lema demonstrado $ A \cup \mathbb{Z} $ também é contável, ou seja, $ (\mathbb{R} - \mathbb{Z}) \cup \mathbb{Z} $ é contável.
+
+Note que $ (\mathbb{R} - \mathbb{Z}) \cup \mathbb{Z} = \mathbb{R} $ logo $ \mathbb{R} $ é contável, o qe contradiz (H1). Logo $ \mathbb{R} - \mathbb{Z} $ não é contável. 
